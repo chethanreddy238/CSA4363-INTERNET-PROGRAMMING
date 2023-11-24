@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Real Estate Service</title>
+</head>
+<body>
+    <!-- Search Container -->
+    <div id="search-container" class="container">
+        <h2>Search Properties</h2>
+        
+        <!-- Search Form -->
+        <form id="search-form">
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="budget">Budget:</label>
+            <input type="text" id="budget" name="budget" required>
+
+            <button type="button" onclick="search()">Search</button>
+        </form>
+
+        <!-- Rest of your code -->
+    </div>
+
+    <!-- Advertisements or links -->
+    <div id="ad-container" class="container">
+        <h2>Advertisements</h2>
+        <a href="https://example.com" target="_blank">Ad 1</a>
+        <a href="https://example.com" target="_blank">Ad 2</a>
+        <!-- Add more advertisements or links as needed -->
+    </div>
+
+    <!-- Your website content goes here -->
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places"></script>
+    <script src="main.js"></script>
+
+    <script>
+        // Direct login without verification (for educational purposes only)
+        function search() {
+            document.getElementById('search-container').style.display = 'none';
+            document.getElementById('ad-container').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
